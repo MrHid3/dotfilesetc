@@ -216,10 +216,10 @@ exec cadmus
 default_border pixel 4
 
 # Colors
-client.focused			#0aff4b	#c0c0c0	#ffffff #0aff4b	#0aff4b
-client.unfocused		#089e30	#c0c0c0	#888888	#089e30	#089e30
-client.focused_inactive		#26e058	#c0c0c0	#ffffff	#26e058	#26e058
-client.urgent			#26e058	#c0c0c0	#fffff	#26e058	#26e058
+client.focused			#0aff4b	#0aff4b	#62645C	#0aff4b	#0aff4b
+client.unfocused		#089e30	#089e30	#ffffff	#089e30	#089e30
+client.focused_inactive		#26e058	#26e058	#62645C	#26e058	#26e058
+client.urgent			#26e058	#26e058	#62645C	#26e058	#26e058
 
 #picom
 exec compton --config /home/gabriel/.config/compton.conf -b  &
