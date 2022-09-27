@@ -187,7 +187,6 @@ bar {
         status_command i3status
 	output HDMI-2
 }
-exec i3bar
 
 # Wallpaper doesn't reset after reboot
 exec --no-startup-id ~/.fehbg
