@@ -57,7 +57,7 @@ exit 0
 fi
 echo ".config/i3/config found!"
 
-read -p "Do you wish to also update the grub config?" grubyn
+read -p "Do you wish to also update the grub config [y/n]?" grubyn
 if [ $grubyn == "y" ]; then
 if [ ! -f /etc/default/grub ]; then
 echo "/etc/default/grub not found, aborting..."
