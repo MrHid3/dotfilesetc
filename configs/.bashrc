@@ -7,5 +7,5 @@
 
 neofetch
 alias ls='ls --color=auto'
-alias discord='discord --no-sandbox'
 PS1='[\u@\h \W]\$ '
+alias gacp='git add * && git commit -m "update" && git push origin HEAD'
