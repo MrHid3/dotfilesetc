@@ -68,6 +68,11 @@ echo "Copying .i3status.conf to $homepath"
 cp configs/.i3status.conf  $homepath/
 echo ".i3status.config (i3bar configuration file) copied succesfully!"
 
+echo "Copying .i3blocks.conf to $homepath"
+cp configs/.i3blocks.conf  $homepath/
+echo ".i3blocks.conf (i3bar second monitor configuration file) copied succesfully!"
+
+
 read -p "Do you want to modify your grub config? [y/n]" yn
 
 if [ $yn == "y" ]; then

@@ -57,18 +57,23 @@ exit 0
 fi
 echo ".config/i3/config found!"
 
+if [ ! -f $home/.i3blocks.conf ]; then
+echo ".i3blocks.conf not found, aborting..."
+exit 0
+fi
+echo ".i3blocks.conf found!"
+
 read -p "Do you wish to also update the grub config [y/n]?" grubyn
 if [ $grubyn == "y" ]; then
 if [ ! -f /etc/default/grub ]; then
 echo "/etc/default/grub not found, aborting..."
+exit 0
 else
 echo "/etc/default/grub found!"
-exit 0
 fi
 else
 echo "Skipping..."
 fi
-
 
 cp $home/.xinitrc ./configs
 echo ".xinitrc copied succesfully!"
@@ -84,6 +89,8 @@ cp $home/.i3status.conf ./configs
 echo ".config/i3status.conf copied succesfully!"
 cp $home/.config/i3/config ./configs
 echo ".config/i3/config copied succesfully!"
+cp $home/.i3blocks.conf ./configs
+echo ".i3blocks.conf copied succesfully!"
 if [ $grubyn == "y" ]; then
 sudo cp /etc/default/grub ./configs
 else
