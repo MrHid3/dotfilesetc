@@ -28,7 +28,7 @@ run the installer
 ./install.sh
 ```
 
-ALternatively, to update the config to the one present on your pc:
+Alternatively, you can update the config to the one present on your pc:
 
 ```
 ./update.sh
