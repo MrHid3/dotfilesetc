@@ -2,12 +2,36 @@
 
 One repo where I have all of my configuration files for bash, xinit, i3 etc.
 
-To install this config automatically
+To install the config:
+
+clone the repo
+
 ```
-$ cd dotfilesetc && sudo chmod 777 install.sh && ./install.sh
+git clone github.com/MrHid3/dotfilesetc
 ```
 
-To update it automatically
+cd into it
+
 ```
-$ cd dotfilesetc && sudo chmod 777 update.sh && ./update.sh
+cd dotfilesetc
 ```
+
+chmod install.sh and update.sh
+
+```
+sudo chmod 777 install.sh update.sh
+```
+
+run the installer
+
+```
+./install.sh
+```
+
+ALternatively, to update the config to the one present on your pc:
+
+```
+./update.sh
+```
+
+Enjoy!
