@@ -47,8 +47,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# Polkit 
-lxpolkit &
+#i3
+exec i3 
 
 #Keyboard
 setxkbmap pl &
@@ -58,3 +58,8 @@ feh --bg-scale /home/gabriel/Pictures/wallpaper.jpg &
 
 #Compositor - picom
 picom -b &
+
+#Pipewire
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
