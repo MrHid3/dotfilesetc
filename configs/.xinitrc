@@ -63,3 +63,6 @@ picom -b &
 /usr/bin/pipewire &
 /usr/bin/pipewire-pulse &
 /usr/bin/pipewire-media-session &
+
+#Keyboard
+/home/gabriel/usefulscripts/script/laptopkb/laptopkb-disable.sh &

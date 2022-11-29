@@ -75,24 +75,24 @@ else
 echo "Skipping..."
 fi
 
-cp $home/.xinitrc ./configs
+cp $home/.xinitrc configs/
 echo ".xinitrc copied succesfully!"
-cp $home/.bashrc ./configs
+cp $home/.bashrc configs/
 echo ".bashrc copied succesfully!"
-cp $home/.bash_profile ./configs
+cp $home/.bash_profile configs/
 echo ".bash_profile copied succesfully!"
-cp $home/.alacritty.yml ./configs
+cp $home/.alacritty.yml configs/
 echo ".alacritty.yml copied succesfully!"
-cp $home/.config/picom.conf ./configs
+cp $home/.config/picom.conf configs/
 echo ".config/picom.conf copied succesfully!"
-cp $home/.i3status.conf ./configs
+cp $home/.i3status.conf configs/
 echo ".config/i3status.conf copied succesfully!"
-cp $home/.config/i3/config ./configs
+cp $home/.config/i3/config configs/
 echo ".config/i3/config copied succesfully!"
-cp $home/.i3blocks.conf ./configs
+cp $home/.i3blocks.conf configs/
 echo ".i3blocks.conf copied succesfully!"
 if [ $grubyn == "y" ]; then
-sudo cp /etc/default/grub ./configs
+sudo cp /etc/default/grub configs/
 else
 echo "Skipping grub..."
 fi
