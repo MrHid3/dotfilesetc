@@ -9,6 +9,8 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias gacp='git add * && git commit -m "update" && git push origin HEAD'
 alias discord='discord --no-sandbox'
+alias gits='gh repo sync --force'
+alias syu='sudo pacman -Syu --noconfirm'
 
 /home/gabriel/usefulscripts/script/laptopkb/laptopkb-disable.sh &
 
